@@ -1,0 +1,8 @@
+{
+"provider": "cloudinary",
+    "providerOptions" : {
+      "cloud_name" : "gondokusuman-21",
+      "api_key" : "331268579561259",
+      "api_secret": "mZ4Mhd8-_MWJbiSVmnXnqdZWHHQ"
+    }
+}
