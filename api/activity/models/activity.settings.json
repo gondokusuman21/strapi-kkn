@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "activities",
   "info": {
-    "name": "Activity"
+    "name": "Activity",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,7 +28,7 @@
       "maxLength": 300,
       "unique": true
     },
-    "Content": {
+    "content": {
       "type": "richtext",
       "required": true
     },
