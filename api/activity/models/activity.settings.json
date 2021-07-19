@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "activities",
   "info": {
-    "name": "Post",
-    "description": ""
+    "name": "Activity"
   },
   "options": {
     "increments": true,
@@ -17,11 +16,22 @@
       "required": true,
       "unique": true
     },
-    "content": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300,
+      "unique": true
+    },
+    "Content": {
       "type": "richtext",
       "required": true
     },
-    "picture": {
+    "coverpicture": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -30,25 +40,6 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "slug": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "author": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "post"
-    },
-    "description": {
-      "type": "text",
-      "maxLength": 300,
-      "required": true,
-      "unique": true
-    },
-    "date": {
-      "type": "date"
     }
   }
 }

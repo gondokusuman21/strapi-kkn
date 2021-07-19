@@ -59,8 +59,8 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "posts": {
-      "via": "user",
+    "post": {
+      "via": "author",
       "collection": "post"
     }
   }
