@@ -49,6 +49,10 @@
     },
     "date": {
       "type": "date"
+    },
+    "categories": {
+      "via": "posts",
+      "collection": "category"
     }
   }
 }
