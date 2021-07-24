@@ -14,12 +14,12 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": false,
-      "unique": false
+      "required": true,
+      "unique": true
     },
     "content": {
       "type": "richtext",
-      "required": false
+      "required": true
     },
     "picture": {
       "model": "file",
@@ -44,11 +44,12 @@
     "description": {
       "type": "text",
       "maxLength": 300,
-      "required": false,
+      "required": true,
       "unique": false
     },
     "date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "categories": {
       "via": "posts",
