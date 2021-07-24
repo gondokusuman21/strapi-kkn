@@ -14,12 +14,12 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "content": {
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "picture": {
       "model": "file",
@@ -33,8 +33,8 @@
     },
     "slug": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "author": {
       "plugin": "users-permissions",
@@ -44,8 +44,8 @@
     "description": {
       "type": "text",
       "maxLength": 300,
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "date": {
       "type": "date"
